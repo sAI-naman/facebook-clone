@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/94a8e29b57.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- nav -->
+    <nav>
+        <div class="nav-left">
+            <img src="Images/logo.png" class="logo">
+            <ul>
+                <li><img src="Images/notification.png" class="bell icon"></li>
+                <li><img src="Images/inbox.png" class="msg icon"></li>
+                <li><img src="Images/video.png" class="video icon"></li>
+            </ul>
+
+        </div>
+        <div class="nav-right">
+            <div class="searchbar">
+                <img src="Images/search.png" alt="search" class="search-icon">
+                <input type="text" class="search" placeholder="search" required>
+            </div>
+            <div class="profile online" onclick="settingsMenuToggle()">
+                <img src="Images/profile-pic.png" alt="profile pic">
+            </div>
+        </div>
+
+        <!-- settings menu  -->
+        <div class="settings">
+
+            <div id="dark-btn" >
+                <span></span>
+            </div>
+            <div class="settings-inner">
+                <div class="user-profile">
+                    <img src="Images/profile-pic.png">
+                    <div>
+                        <p>John Nicholson</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="Images/feedback.png" class="feedback">
+                    <div>
+                        <p>Give feedback</p>
+                        <a href="#">Help us to improve</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="setting-links">
+                    <img src="Images/setting.png" class="setting-icon">
+                    <a href="#">Setting & Privacy</a> <img src="Images/arrow.png" width="10px" alt="">
+                </div>
+                <div class="setting-links">
+                    <img src="Images/help.png" class="setting-icon">
+                    <a href>Help & Support</a> <img src="Images/arrow.png" width="10px" alt="">
+                </div>
+                <div class="setting-links">
+                    <img src="Images/display.png" class="setting-icon">
+                    <a href="#">Display & Accessibilty</a> <img src="Images/arrow.png" width="10px" alt="">
+                </div>
+                <div class="setting-links">
+                    <img src="Images/logout.png" class="setting-icon">
+                    <a href="#">Log out</a> <img src="Images/arrow.png" width="10px" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- content -->
+    <div class="container">
+        <div class="left-side-bar">
+            <!-- left sidebar -->
+            <div class="imp-links">
+                <a href="#"><img src="Images/news.png"> Latest News</a>
+                <a href="#"><img src="Images/friends.png"> Friends</a>
+                <a href="#"><img src="Images/group.png"> Group</a>
+                <a href="#"><img src="Images/marketplace.png"> Market Place</a>
+                <a href="#"><img src="Images/watch.png"> Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="Images/shortcut-1.png">Web Developers</a>
+                <a href="#"><img src="Images/shortcut-2.png">Web Design Course</a>
+                <a href="#"><img src="Images/shortcut-3.png">Full Stack Development</a>
+                <a href="#"><img src="Images/shortcut-4.png">Experts</a>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <!-- main content  -->
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="Images/upload.png" alt="" class="">
+                    <p>Post Story</p>
+                </div>
+
+                <div class="story story2">
+                    <img src="Images/member-1.png" alt="" class="">
+                    <p>Alison Parker</p>
+                </div>
+
+                <div class="story story3">
+                    <img src="Images/member-2.png" alt="" class="">
+                    <p>James Bond</p>
+                </div>
+
+                <div class="story story4">
+                    <img src="Images/member-3.png" alt="" class="">
+                    <p>Sydney Sweeney</p>
+                </div>
+
+                <div class="story story5">
+                    <img src="Images/member-4.png" alt="" class="">
+                    <p>Bobby Lee</p>
+                </div>
+            </div>
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="Images/profile-pic.png">
+                    <div>
+                        <p>John Nicholson</p>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind John?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="Images/live-video.png" alt=""> Live Video</a>
+                        <a href="#"><img src="Images/photo.png" alt=""> Photo/Video</a>
+                        <a href="#"><img src="Images/feeling.png"> Feeling/Activity</a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Images/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>Jun 24 2021, 13:42 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                </div>
+
+                <p id="post-text">Subscribe to my channel <span>@sainaman</span> <a href="#">#sainaman</a>
+                    <a href="#">#Youtube</a>
+                </p>
+                <img src="Images/feed-image-1.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="Images/like-blue.png" alt=""> 120</div>
+                        <div><img src="Images/comments.png" alt=""> 45</div>
+                        <div><img src="Images/share.png" alt=""> 30</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="Images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Images/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>Jun 24 2021, 13:42 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                </div>
+                <p id="post-text">Camping with friends.<a href="#">#friends</a>
+                    <a href="#">#camping</a>
+                </p>
+                <img src="Images/feed-image-2.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="Images/like.png" alt=""> 100</div>
+                        <div><img src="Images/comments.png" alt=""> 65</div>
+                        <div><img src="Images/share.png" alt=""> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="Images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Images/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>Jun 24 2021, 13:42 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                </div>
+                <p id="post-text">Chilling with friends.<a href="#">#friends</a>
+                    <a href="#"></a>
+                </p>
+                <img src="Images/feed-image-3.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="Images/like.png" alt=""> 100</div>
+                        <div><img src="Images/comments.png" alt=""> 65</div>
+                        <div><img src="Images/share.png" alt=""> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="Images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Images/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>Jun 24 2021, 13:42 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                </div>
+                <p id="post-text">Work.<a href="#">#work</a>
+                    <a href="#"></a>
+                </p>
+                <img src="Images/feed-image-4.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="Images/like.png" alt=""> 100</div>
+                        <div><img src="Images/comments.png" alt=""> 65</div>
+                        <div><img src="Images/share.png" alt=""> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="Images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="Images/profile-pic.png">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>Jun 24 2021, 13:42 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis"></i></a>
+                </div>
+                <p id="post-text">Group meeting.<a href="#">#meeting</a>
+                    <a href="#"></a>
+                </p>
+                <img src="Images/feed-image-5.png" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="Images/like.png" alt=""> 100</div>
+                        <div><img src="Images/comments.png" alt=""> 65</div>
+                        <div><img src="Images/share.png" alt=""> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="Images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn">Load more</button>
+
+
+        </div>
+
+        <div class="right-side-bar">
+            <!-- right sidebar  -->
+            <div class="title">
+                <h4>Events</h4>
+                <a href="#">See all</a>
+            </div>
+
+            <div class="event">
+                <div class="left-col">
+                    <h3>18</h3>
+                    <span>Mar</span>
+                </div>
+                <div class="right-col">
+                    <h4>Social Media</h4>
+                    <p>Willson Tech Park <i class="fa-solid fa-location-dot"></i></p>
+                    <a href="#">more info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-col">
+                    <h3>22</h3>
+                    <span>Jun</span>
+                </div>
+                <div class="right-col">
+                    <h4>Marketing</h4>
+                    <p>Willson Tech Park <i class="fa-solid fa-location-dot"></i></p>
+                    <a href="#">more info</a>
+                </div>
+            </div>
+            <div class="title">
+                <h4>Advertisment</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="Images/advertisement.png" class="ad">
+            <div class="title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="Images/member-1.png">
+                </div>
+                <p>Alison Parker</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="Images/member-2.png">
+                </div>
+                <p>James Bond</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="Images/member-3.png">
+                </div>
+                <p>Sydney Sweeney</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="Images/member-4.png">
+                </div>
+                <p>Bobby Lee</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Copyright 2024 - Sainaman</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook-Profile page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/94a8e29b57.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- nav -->
+    <nav>
+        <div class="nav-left">
+            <img src="Images/logo.png" class="logo">
+            <ul>
+                <li><img src="Images/notification.png" class="bell icon"></li>
+                <li><img src="Images/inbox.png" class="msg icon"></li>
+                <li><img src="Images/video.png" class="video icon"></li>
+            </ul>
+
+        </div>
+        <div class="nav-right">
+            <div class="searchbar">
+                <img src="Images/search.png" alt="search" class="search-icon">
+                <input type="text" class="search" placeholder="search" required>
+            </div>
+            <div class="profile online" onclick="settingsMenuToggle()">
+                <img src="Images/profile-pic.png" alt="profile pic">
+            </div>
+        </div>
+
+        <!-- settings menu  -->
+        <div class="settings">
+
+            <div id="dark-btn" >
+                <span></span>
+            </div>
+            <div class="settings-inner">
+                <div class="user-profile">
+                    <img src="Images/profile-pic.png">
+                    <div>
+                        <p>John Nicholson</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="Images/feedback.png" class="feedback">
+                    <div>
+                        <p>Give feedback</p>
+                        <a href="#">Help us to improve</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="setting-links">
+                    <img src="Images/setting.png" class="setting-icon">
+                    <a href="#">Setting & Privacy</a> <img src="Images/arrow.png" width="10px" alt="">
+                </div>
+                <div class="setting-links">
+                    <img src="Images/help.png" class="setting-icon">
+                    <a href>Help & Support</a> <img src="Images/arrow.png" width="10px" alt="">
+                </div>
+                <div class="setting-links">
+                    <img src="Images/display.png" class="setting-icon">
+                    <a href="#">Display & Accessibilty</a> <img src="Images/arrow.png" width="10px" alt="">
+                </div>
+                <div class="setting-links">
+                    <img src="Images/logout.png" class="setting-icon">
+                    <a href="#">Log out</a> <img src="Images/arrow.png" width="10px" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+   <!-- profile-page  -->
+    <div class="profile-container">
+        <img src="Images/cover.png" class="cover-img">
+        <div class="profile-details">
+            <div class="left-profile">
+                <div class="pd-row">
+                    <img src="Images/profile.png" class="pd-image">
+                    <div>
+                        <h3>John Nicholson</h3>
+                        <p>120 Friends (20 mutual)</p>
+                        <img src="Images/member-1.png" alt="">
+                        <img src="Images/member-2.png" alt="">
+                        <img src="Images/member-3.png" alt="">
+                        <img src="Images/member-4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="right-profile">
+                <button type="button"><img src="Images/add-friends.png" alt=""> Friends</button>
+                <button type="button"><img src="Images/message.png" alt="">Message</button>
+                <br>
+                <a href="#"><img src="Images/more.png" alt=""></a>
+
+
+            </div>
+        </div>
+
+        <!-- profile page bottom -->
+        
+
+    </div>
+
+
+
+
+    <div class="footer">
+        <p>Copyright 2024 - Sainaman</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

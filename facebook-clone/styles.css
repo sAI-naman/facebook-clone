@@ -1,0 +1,617 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+:root {
+    --body-color: #efefef;
+    --nav-color: #1876f2;
+    --bg-color: #fff;
+}
+.dark-mode {
+    --body-color: #0a0a0a;
+    --nav-color: #000;
+    --bg-color: #000;
+}
+
+
+
+body {
+    background: var(--body-color);
+    transition: background 0.3s;
+
+}
+
+/* nav-bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--nav-color);
+    padding: 5px 5%;
+    top: 0;
+    z-index: 100;
+    position: sticky;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 160px;
+    margin-right: 45px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li img {
+    width: 25px;
+    margin: 0 15px;
+}
+
+.searchbar {
+    background: #efefef;
+    width: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.search-icon {
+    width: 18px;
+
+}
+
+.search {
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: 0;
+    padding: 5px;
+
+}
+
+.profile img {
+    width: 40px;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+
+.online {
+    position: relative;
+}
+
+.online::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: #41db51;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* content */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
+
+.left-side-bar {
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+}
+
+.right-side-bar {
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    background: var(--bg-color);
+    padding: 20px;
+    border-radius: 4px;
+    color: #626262;
+
+}
+
+.main-content {
+    flex-basis: 47%;
+
+}
+
+.imp-links {
+    border-bottom: 1px solid #ccc;
+}
+
+.imp-links a,
+.shortcut a {
+    display: flex;
+    text-decoration: none;
+    color: #626262;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.imp-links a img {
+    width: 25px;
+    margin-right: 15px;
+}
+
+.imp-links a:last-child {
+    color: rgb(24, 118, 242);
+}
+
+.shortcut p {
+    margin: 25px 0;
+    color: #626262;
+    font-weight: 500;
+}
+
+.shortcut a img {
+    width: 40px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.title h4 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.title a {
+    text-decoration: none;
+    color: #1876f2;
+    font-size: 12px;
+}
+
+.event {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 20px;
+
+}
+
+.left-col {
+    border-radius: 10px;
+    height: 65px;
+    width: 65px;
+    margin-right: 15px;
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event p {
+    font-size: 12px;
+}
+
+.event a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #1876f2;
+}
+
+.left-col span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #1876f2;
+    width: 100%;
+    color: #fff;
+    font-weight: 500;
+}
+
+.right-col h4 {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.ad {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.online-list {
+    display: flex;
+    align-items: center;
+}
+
+.online-list .online {
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+.online-list img {
+    width: 40px;
+    border-radius: 20px;
+
+}
+
+.online-list .online::after {
+    top: unset;
+    bottom: 5px;
+}
+
+.story-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.story {
+    flex-basis: 18%;
+    padding-top: 32%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.story img {
+    position: absolute;
+    width: 45px;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    border: 4px solid #1876f2;
+}
+
+.story p {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+.story1 {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(Images/status-1.png);
+
+}
+
+.story2 {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(Images/status-2.png);
+
+}
+
+.story3 {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(Images/status-3.png);
+
+}
+
+.story4 {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(Images/status-4.png);
+
+}
+
+.story5 {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(Images/status-5.png);
+
+}
+
+.story.story1 img {
+    top: unset;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    border: 0;
+    width: 35px;
+}
+
+.write-post-container {
+    width: 100%;
+    background: var(--bg-color);
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    
+}
+
+.user-profile img {
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-profile p {
+    margin-bottom: -5px;
+    font-weight: 500;
+    color: #626262;
+}
+
+.post-input-container {
+    padding: 20px 0 0 55px;
+}
+
+.post-input-container textarea {
+    width: 100%;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    resize: none;
+}
+
+.add-post-links {
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.add-post-links a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #626262;
+    margin-right: 15px;
+    font-size: 8px;
+}
+
+.add-post-links img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.post-container {
+    width: 100%;
+    background: var(--bg-color);
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+    margin: 20px 0;
+}
+
+.user-profile span {
+    font-size: 13px;
+    color: #9a9a9a;
+}
+
+#post-text {
+    color: #9a9a9a;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+#post-text span {
+    color: #626262;
+    font-weight: 500;
+}
+
+#post-text a {
+    text-decoration: none;
+    color: #1876f2;
+}
+
+.post-img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
+
+.post-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activity-icons div img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.activity-icons div {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.post-profile-icon {
+    display: flex;
+    align-items: center;
+}
+
+.post-profile-icon img {
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.post-row a {
+    color: #9a9a9a;
+}
+.btn {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid;
+    color: #626262;
+    background: transparent;
+    border-radius: 4px;
+}
+.footer {
+    text-align: center;
+    color: #9a9a9a;
+    padding: 10px 0 20px;
+    font-size: 13px;
+}
+.settings {
+    position: absolute;
+    width: 90%;
+    max-width: 350px;
+    background: var(--bg-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    overflow: hidden;
+    top: 108%;
+    right: 5%;
+    max-height: 0;
+    transition: max-height .3s;
+}
+.settings-height {
+    max-height: 450px;
+}
+.user-profile a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #1876f2;
+}
+.settings-inner {
+    padding: 20px;
+}
+.settings-inner .user-profile {
+    margin: 15px 0;
+}
+.setting-links {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+
+}
+.setting-links .setting-icon {
+    width: 38px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.setting-links a {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #626262;
+}
+#dark-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ccc;
+    width: 45px;
+    border-radius: 15px;
+    padding: 2px 3px;
+    cursor: pointer;
+    display: flex;
+    transition: padding-left 0.5s, background .5s;
+
+
+}
+#dark-btn span {
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+}
+#dark-btn.dark-btn-on{
+    padding-left: 23px;
+    background: #292929;
+}
+
+/* profile page  */
+
+.profile-container {
+    padding: 20px 15%;
+    color: #626262;
+}
+.cover-img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 14px;
+}
+.profile-details {
+    background: var(--bg-color);
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.pd-row {
+    display: flex;
+    align-items: flex-start;
+
+}
+.pd-image {
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.pd-row div h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.pd-row div p{
+    font-size: 13px;
+}
+.pd-row div img {
+    width: 25px;
+    border-radius: 50%;
+    margin-top: 12px;
+}
+.right-profile button{
+    background: #1876f2;
+    border: 0;
+    outline: 0;
+    padding: 6px 10px;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.right-profile button img {
+    height: 15px;
+    margin-right: 10px;
+}
+.right-profile button:first-child {
+    background: #e4e6eb;
+    color: #000;
+}
+.right-profile {
+    text-align: right;
+} 
+.right-profile a {
+    border-radius: 3px;
+    padding: 12px;
+    display: inline-flex;
+    margin-top: 30px;
+}
+.right-profile a img{
+    width: 20px;
+}
